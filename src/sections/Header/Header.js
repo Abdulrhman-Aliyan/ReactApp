@@ -1,5 +1,7 @@
 import './Header.css';
 
+import Link from 'react-router-dom'; /*unused becuase thieris no pages built yet*/
+
 import logo from '../../assets/images/logo.png';
 import NavItem from '../../components/NavItem/NavItem';
 import {NavItemDropDown} from '../../components/NavItem/NavItem';
