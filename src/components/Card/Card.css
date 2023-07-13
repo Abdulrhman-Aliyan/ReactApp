@@ -7,6 +7,20 @@
     border-radius: calc(var(--border-radius-primary) / 2);
     padding: calc(var(--padding-primary) / 2);
     margin: calc(var(--margin-dash-primary) / 5);
+    transition: ease-in-out .3s;
+}
+
+.card-wrapper:hover {
+    background-color: var( --color-darkest);
+    transform: scale(1.1);
+    color: var(--color-primary);
+}
+
+.card-wrapper:hover img {
+  animation-name: cardEntered;
+  animation-duration: 0.3s;
+  animation-iteration-count: 3;
+  transition: ease-in-out .1s;
 }
 
 .most-populer-item-image {
@@ -35,4 +49,11 @@
     display: flex;
     justify-content: space-between;
     margin-right: calc(var(--margin-dash-primary) / 4);
+}
+
+@keyFrames cardEntered {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(1deg);}
+    50% {transform: rotate(-1deg);}
+    100% {transform: rotate(0deg);}
 }
